@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lottery System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .choice-box {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            width: 150px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .choice-box:hover {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Lottery System</h1>
+    <div onclick="location.href='manager.html';" class="choice-box">
+        <h2>Manager</h2>
+    </div>
+    <div onclick="location.href='user.html';" class="choice-box">
+        <h2>User</h2>
+    </div>
+    <script>
+        // JavaScript can be added here if needed for further functionality
+    </script>
+</body>
+</html>

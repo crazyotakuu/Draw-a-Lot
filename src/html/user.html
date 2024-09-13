@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lottery User</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #balanceDisplay, #ticketInfo {
+            margin-top: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lottery User Interface</h1>
+        <button onclick="checkUserBalance()">Check My Balance</button>
+        <div id="balanceDisplay"></div>
+        <div>
+            <input type="text" id="ticketNumbers" placeholder="Enter 5 numbers (comma-separated)">
+            <button onclick="buyTicket()">Buy Ticket</button>
+        </div>
+        <div id="ticketInfo"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="../javascript/user.js"></script>
+</body>
+</html>
